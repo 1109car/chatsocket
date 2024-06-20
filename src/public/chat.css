@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container_general{
+    background-color: rgb(69, 69, 69);
+}
+.container_divisiones{
+    display: grid;
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 30% 70%;
+    width: 100%;
+    height: 100vh;
+
+}
+.header_encabezado{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    width: 30%;
+    height: 100vh;
+
+    /* border:solid red 2px; */
+}
+.bienvenido{
+    width: 100%;
+    height: 12vh;
+    color: rgb(255, 255, 255);
+    background-color: rgb(136, 136, 136);
+}
+.listados{
+    position: relative;
+    display: flex;
+    color: aliceblue;
+    text-decoration: none; 
+    height: 7vh;
+    cursor: pointer;
+}
+.ul{
+    display: flex;
+    text-align: center;
+    list-style: none;
+    width: 100%;
+}
+.li{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 7%;
+    cursor: pointer;
+    height: 100%;
+    padding-left: 7%;
+    font-size: 1.3rem;
+    text-align: center;
+    border: solid rgb(90, 209, 239) 0.5px;
+}
+.li:hover{
+    background-color: rgba(131, 131, 131,0.4);
+}
+aside{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+.chat-render{
+    width: 100%;
+}
+.divisiodos{
+    border: solid red 2px;
+    width: 100%;
+    height: 12vh;
+    color: aliceblue;
+}
+/* .form_mesages{
+    border: solid red 2px;
+} */
+.messages{
+   width: 70%;
+   height: 5vh;
+   margin-bottom: 2%;
+   border-radius: 14px;
+   padding-left: 2%;
+   margin-left: 4%;
+   outline: none;
+   border: none;
+}
+
+.enviar{
+    width: 10%;
+    height: 4vh;
+    background-color: beige;
+    border-radius: 12px;
+    margin-left: 1%;
+    cursor: pointer;
+    font-weight: 800;
+    border: none;
+}
+.tercerdiv{
+    width: 100%;
+    height: 12vh;
+    border: solid red 2px;
+}
+#listado_data{
+    border:solid red 2px;
+    padding-top: 12%;
+}

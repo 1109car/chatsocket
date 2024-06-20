@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Poetsen+One&family=Rubik+Mono+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_form{
+    display: flex;
+    background-color: rgb(28, 148, 218);
+    height: 100vh;
+    justify-content: end;
+}
+.enviar_form{ 
+    padding: 10%;
+    text-align: center;
+}
+.registrate{
+    display: block;
+    font-size:3rem;
+     color:rgba(253, 254, 255, 0.98);
+     font-family: Helvetica Neue, Helvetica Neue, Helvetica, Arial, sans-serif;
+     width: 100%;
+     font-style: normal;
+ 
+   
+}
+.label{
+    width: max-content;
+    margin: 70px auto;
+    display: grid;
+    font-size: 1rem;
+    grid-template-areas: "input";
+    /* cursor: pointer; */
+}
+.input{
+    grid-area: input;
+    width: 300px;
+    font: inherit;
+    border-radius: 10px;
+    border: 10x solid gray;
+    padding: .7rem 1.5rem;
+    
+}
+.label__nombre{
+    grid-area: input;
+    color: #fff;
+    z-index: 100;
+    width: max-content;
+    margin-left: 1rem;
+    padding: 0 .5rem;
+    align-self: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+    transition: transform .2s;
+    transform-origin: center left;
+}
+
+.input:focus + .label__nombre,
+.input:not(:placeholder-shown) + .label__nombre{
+    transform: translateY(-50%) scale(.7);
+    background-color: rgb(28, 148, 218);
+    color: white;
+    border-radius: 15px;
+
+}
+input{
+    background-color:  rgb(28, 148, 218);
+    border: solid white 1px;
+}
+input:focus{
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+.cont__img{
+    text-align: center;
+    width: 70%;
+    height: 100vh;
+    padding: 5%;
+    background-image: url("./img/image.jpg");
+  }
+
+.bienvenido{
+    position: absolute;
+    font-size: 2rem;
+    color: #ffffff;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -7%;
+    margin-right: 2.5%;
+    /* opacity: 0.6; */
+    transition: 3s;
+   animation:trama  infinite ease-out 10s;
+    animation-iteration-count: 1; 
+}
+@keyframes  trama {
+    0%{
+        transition: 2s;
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100%{
+        transition: 2s;
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.ingresar{
+    color: #fff;
+    font-style: none;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    transition: 1s;
+    padding: 4%;
+    border-radius: 15px;
+}
+.ingresar:hover{
+    transition: 0.5s;
+    text-shadow: 12px 5px 10px black;
+}

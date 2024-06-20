@@ -1,0 +1,26 @@
+{
+  "name": "chat-final",
+  "version": "1.0.0",
+  "description": "es una aplicacion para expresar lo que sienttes",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node"
+  },
+  "author": "carlos",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.24.6",
+    "@babel/core": "^7.24.6",
+    "@babel/node": "^7.24.6",
+    "@babel/preset-env": "^7.24.6",
+    "nodemon": "^3.1.2"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.7.0",
+    "mongoose": "^8.4.0",
+    "socket.io": "^4.7.5"
+  }
+}

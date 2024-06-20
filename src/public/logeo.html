@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="logeo.css" />
+    <title>Inicio</title>
+  </head>
+  <body>
+    <div class="container_form">
+      <div class="cont__img">
+        <!-- <img src="img/image.jpg" alt=""> -->
+      </div>
+        <div>
+          <!-- <h2 class="bienvenido">
+            Bienvenido al lugar donde tus pensamientos y presagios seran
+            "escuchados".
+          </h2> -->
+        </div>
+      
+      <form class="enviar_form">
+        <h1 class="registrate">Iniciar Sesion</h1>
+        <label class="label">
+          <input type="text" placeholder=" " class="input" id="nombre" autocomplete="off"/>
+          <span class="label__nombre">Ingresa tu nombre</span>
+        </label>
+        <label class="label">
+          <input
+            type="password"
+            placeholder=" "
+            class="input"
+            id="contrasena"
+          />
+          <span class="label__nombre">Ingresa tu contraseña</span>
+        </label>
+        <a id="clickForm" href="http://localhost:3000/">Ingresar</a>
+      </form>
+    </div>
+    <script src="/socket.io/socket.io.js"></script> 
+    <script src="logeo.js"  type="module" ></script>
+    <!-- <script src="socket.js" type="module"></script> -->
+  </body>
+</html>
